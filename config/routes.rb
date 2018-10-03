@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   scope :api do
     scope :v1 do
       scope :articles do
-        post '/', to: 'article#new'
+        post "/", to: "article#new"
       end
     end
   end

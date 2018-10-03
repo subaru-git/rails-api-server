@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe Article, type: :model do
   before do
@@ -14,5 +14,5 @@ RSpec.describe Article, type: :model do
       @article.content = ""
       expect(@article.valid?).to eq(false)
     end
-  end  
+  end
 end

@@ -2,6 +2,7 @@ class ArticleController < ApplicationController
   def index
     render json: {content: "content from api server."}
   end
+
   def new
     @article = Article.new(article_params)
     if @article.save
@@ -10,10 +11,10 @@ class ArticleController < ApplicationController
       render json: {status: false}
     end
   end
-  
-  private
-    def article_params
-      params.require(:article).permit(:content)
-    end
 
+  private
+
+  def article_params
+    params.require(:article).permit(:content)
+  end
 end

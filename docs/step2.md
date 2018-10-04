@@ -3,6 +3,7 @@
 ## command
 
 `rails generate model article content:string`
+`rails generate model User name:string email:string password_digest:string`
 
 ## structure
 

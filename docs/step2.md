@@ -9,15 +9,13 @@
 
 ### article
 
-| name       | type    | detail   |
-| :--------: | :-----: | :------- |
-| id         | integer | (auto)   |
-| title      | text    |          |
-| content    | text    |          |
-| created_by | integer | User::id |
-| updated_by | integer | User::id |
-| created_at | date    | (auto)   |
-| updated_at | date    | (auto)   |
+| name       | type    | detail |
+| :--------: | :-----: | :----- |
+| id         | integer | (auto) |
+| title      | text    |        |
+| content    | text    |        |
+| created_at | date    | (auto) |
+| updated_at | date    | (auto) |
 
 ### tag
 
@@ -48,6 +46,16 @@
 | article    | integer | article::id |
 | created_at | date    | (auto)      |
 | updated_at | date    | (auto)      |
+
+### History
+
+| name       | type    | detail                                                                            |
+| :--------: | :-----: | :-------------------------------------------------------------------------------- |
+| id         | integer | (auto) <br> if minimum same article id then it means this user created an article |
+| user       | integer | user::id                                                                          |
+| article    | integer | article::id                                                                       |
+| created_at | date    | (auto)                                                                            |
+| updated_at | date    | (auto)                                                                            |
 
 ### User
 

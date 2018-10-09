@@ -3,23 +3,23 @@ module Api
     class ArticlesController < ApplicationController
       def index
         @article = Article.all
-        render json: {status: true, articles: @article}
+        render json: { status: true, articles: @article }
       end
 
       def create
         @article = Article.new(article_params)
         if @article.save
-          render json: {status: true}
+          render json: { status: true }
         else
-          render json: {status: false}
+          render json: { status: false }
         end
       end
 
       private
 
-      def article_params
-        params.require(:article).permit(:content)
-      end
+        def article_params
+          params.require(:article).permit(:content)
+        end
     end
   end
 end

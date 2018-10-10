@@ -7,7 +7,7 @@ namespace :factory_bot do
       end
     else
       system("bundle exec rake factory_bot:lint RAILS_ENV='test'")
-      fail if $?.exitstatus.nonzero?
+      raise if $CHILD_STATUS.exitstatus.nonzero?
     end
   end
 end

@@ -29,4 +29,5 @@
 # Ignore vscode files.
 .vscode/*
 
-
+# Ignore Rspec result text
+/spec/examples.txt

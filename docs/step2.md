@@ -33,7 +33,7 @@
 | :--------: | :-----: | :---------- |
 | id         | integer | (auto)      |
 | path       | text    |             |
-| article    | integer | article::id |
+| article_id | integer | article::id |
 | created_at | date    | (auto)      |
 | updated_at | date    | (auto)      |
 
@@ -42,8 +42,8 @@
 | name       | type    | detail      |
 | :--------: | :-----: | :---------- |
 | id         | integer | (auto)      |
-| user       | integer | user::id    |
-| article    | integer | article::id |
+| user_id    | integer | user::id    |
+| article_id | integer | article::id |
 | created_at | date    | (auto)      |
 | updated_at | date    | (auto)      |
 

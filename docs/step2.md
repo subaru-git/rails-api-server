@@ -22,7 +22,7 @@
 | name       | type    | detail      |
 | :--------: | :-----: | :---------- |
 | id         | integer | (auto)      |
-| article    | integer | article::id |
+| article_id | integer | article::id |
 | tag        | text    |             |
 | created_at | date    | (auto)      |
 | updated_at | date    | (auto)      |

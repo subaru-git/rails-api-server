@@ -10,13 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_11_131743) do
+ActiveRecord::Schema.define(version: 2018_10_11_133530) do
 
   create_table "articles", force: :cascade do |t|
     t.string "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text "title"
+  end
+
+  create_table "paths", force: :cascade do |t|
+    t.text "path"
+    t.integer "article_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["article_id"], name: "index_paths_on_article_id"
   end
 
   create_table "tags", force: :cascade do |t|

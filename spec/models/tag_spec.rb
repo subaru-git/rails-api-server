@@ -20,6 +20,5 @@ RSpec.describe Tag, type: :model do
       sametag = build(:tag)
       expect(sametag.valid?).to eq(false)
     end
-
   end
 end
